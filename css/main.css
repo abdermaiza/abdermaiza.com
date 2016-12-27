@@ -1,0 +1,15 @@
+.hero-head{
+	position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    background: white;
+}
+
+.hero-body{
+	margin-top: 30px;
+}
+
+.clients a.button{
+	margin: .5rem;
+}

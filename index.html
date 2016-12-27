@@ -9,9 +9,9 @@
     <meta name="author" content="">
 
     <!-- Le style -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.2.3/css/bulma.css.map" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.2.3/css/bulma.min.css.map" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-    <link href="css/bulma.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.2.3/css/bulma.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
    
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -22,8 +22,7 @@
 
   <body class="">
 
-	<section class="hero is-dark">
-
+	<section class="hero is-text">
 		<div class="hero-head">
 			<div class="container">
 				<nav class="nav">
@@ -35,17 +34,17 @@
 					<div class="nav-center">
 					    <a class="nav-item" href="https://github.com/abdermaiza">
 					      <span class="icon">
-					        <i class="fa fa-github"></i>
+					        <i class="fa fa-github" aria-hidden="true"></i>
 					      </span>
 					    </a>
 					    <a class="nav-item" href="https://twitter.com/MAIZA_Abder">
 					      <span class="icon">
-					        <i class="fa fa-twitter"></i>
+					        <i class="fa fa-twitter" aria-hidden="true"></i>
 					      </span>
 					    </a>
 					    <a class="nav-item" href="https://lnkd.in/ibzX5A">
 					      <span class="icon">
-					        <i class="fa fa-linkedin"></i>
+					        <i class="fa fa-linkedin" aria-hidden="true"></i>
 					      </span>
 					    </a>
 				  	</div>
@@ -55,27 +54,118 @@
 						<span></span>
 					</span>
 					<div id="nav-menu" class="nav-right nav-menu">
-						<a href="#" class="nav-item">Home</a>
-						<a href="#" class="nav-item">Projects</a>
-						<a href="#" class="nav-item">Skills</a>
+						<a href="#top" class="nav-item">Home</a>
+						<a href="#projects" class="nav-item">Projects</a>
+						<a href="#skills" class="nav-item">Skills</a>
+						<a href="#contact" class="nav-item">Contact</a>
 					</div>
 				</nav>
 
 	    	</div>
 		</div>
-
-		<div class="hero-body">
+		<div id="top" class="hero-body">
 			<div class="container">
-				<span class="icon is-large">
-		          <i class="fa fa-magic"></i>
-		        </span>
-        		<h2 class="title is-2">Cette page utilise le moderne  framework CSS basé sur Flexbox, <a href="http://bulma.io/">Bulma</a></h2>
+        		<h2 class="title is-2">
+        			<span class="icon is-large">
+		          		<i class="fa fa-magic" aria-hidden="true"></i>
+		        	</span>
+        			<strong>Intégrateur web</strong> en <a href="https://www.hopwork.fr/profile/abderrahmenmaiza">freelance</a>, je fais et défais des sites web depuis 2012. N'hésitez pas à me <a href="#contact">contacter</a>.
+        		</h2>
+        		<h3 class="subtitle">Ce portfolio utilise un nouveau framework CSS basé sur Flexbox, <a href="http://bulma.io/">Bulma</a></h3>
 			</div>
 		</div>
-
-
 	</section>
 
+	<section class="section hero is-dark container">
+		<div id="projects" class="columns">
+			<div class="column is-4">
+			    <h1 class="title">Ma spécialité ?</h1>
+				<h2 class="subtitle">
+				    <span class="icon">
+					    <i class="fa fa-check-circle" aria-hidden="true"></i>
+					</span>
+	  				Le développement de <strong>sites Internet responsive</strong> :
+				</h2>
+				<ul>
+					<li class="clients">
+						<a href="#" class="button is-primary">Un monde à deux</a>
+					</li>
+					<li class="clients">
+						<a href="#" class="button is-primary">Merck France</a>
+					</li>
+					<li class="clients">
+						<a href="#" class="button is-primary">Sarenza</a>
+					</li>
+					<li class="clients">
+						<a href="#" class="button is-primary">Intersport</a>
+					</li>
+
+				</ul>
+			</div>
+			<div class="column is-8">
+				<div class="box">
+			        <article class="media">
+			            <div class="media-left">
+			              <figure class="image is-64x64">
+			                <img src="img/barackpouce.jpg" alt="Approve client Maiza">
+			              </figure>
+			            </div>
+			            <div class="media-content">
+			              <div class="content">
+			                <p>
+			                  <strong>Barack OBAMA</strong> <small>@Bobama</small> <small>31m</small>
+			                  <br>
+			                  Il m'a décoincé fort rapidement sur des problèmes complexes en html/css, merci !
+			                </p>
+			              </div>
+			              <nav class="level">
+			                <div class="level-left">
+			                  <a class="level-item">
+			                    <span class="icon is-small"><i class="fa fa-reply" aria-hidden="true"></i></span>
+			                  </a>
+			                  <a class="level-item">
+			                    <span class="icon is-small"><i class="fa fa-retweet" aria-hidden="true"></i></span>
+			                  </a>
+			                  <a class="level-item">
+			                    <span class="icon is-small"><i class="fa fa-heart" aria-hidden="true"></i></span>
+			                  </a>
+			                </div>
+			              </nav>
+			            </div>
+			        </article>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section hero is-success container">
+		<div id="projects" class="columns">
+			<div class="column is-12">
+				<h1 class="title">Mes projets web</h1>
+    			<h2 class="subtitle">
+      				<span class="icon">
+					    <i class="fa fa-check-circle" aria-hidden="true"></i>
+					</span>
+					Des <strong>sites Internet</strong> responsive ou des missions de maintenance.
+    			</h2>
+			</div>
+		</div>
+	</section>
+
+	<section class="section hero is-danger container">
+		<div id="projects" class="columns">
+			<div class="column is-12">
+			   <h1 class="title">Mes projets web</h1>
+    			<h2 class="subtitle">
+    			    <span class="icon">
+					    <i class="fa fa-check-circle" aria-hidden="true"></i>
+					</span>
+      				Des <strong>sites Internet</strong> responsive ou des missions de maintenance.
+    			</h2>
+    		</div>
+		</div>
+	</section>
+	
     <footer>
        
     </footer>
