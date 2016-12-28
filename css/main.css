@@ -1,3 +1,19 @@
+.body-white{
+	background-color: white;
+}
+
+body > .section{
+    margin: 50px auto;
+}
+.nav-menu .nav-item{
+	display: block;
+}
+.nav-item .is-hidden-tablet-only{
+	margin-left: .5rem;
+}
+nav .nav-left{
+	overflow: hidden;
+}
 .hero-head{
 	position: fixed;
     top: 0;
@@ -6,10 +22,30 @@
     background: white;
 }
 
-.hero-body{
-	margin-top: 30px;
+.italic{
+	font-style: italic;
 }
 
-.clients a.button{
-	margin: .5rem;
+.hero-body{
+	margin-top: 60px;
+}
+
+.skills, .skills .button{
+	margin-bottom: 1.5rem;
+}
+
+.box img{
+	border-radius: 5px;
+}
+.notification .info-skill{
+	max-width: 700px;
+	z-index: 2;
+}
+.info-skill .logo{
+	max-width: 30px;
+	margin: auto 0;
+    position: absolute;
+    top: 15%;
+    right: 3%;
+    z-index: -1;
 }
