@@ -5,6 +5,9 @@
 body > .section{
     margin: 50px auto;
 }
+section#skills{
+	margin: 0 auto;
+}
 .nav-menu .nav-item{
 	display: block;
 }
@@ -21,7 +24,24 @@ nav .nav-left{
     z-index: 100;
     background: white;
 }
-
+section.is-text{
+	background: url(https://images.unsplash.com/photo-1470399332216-237209aa628e?dpr=1.25&auto=compress,format&fit=crop&w=1199&h=899&q=80&cs=tinysrgb&crop=);
+	background-size: cover;
+	background-repeat: no;    
+	width: 100%;
+    height: 700px;
+}
+.is-text .title{
+	font-size: 3rem;
+	margin: 25px auto;
+    margin-top: 9%;
+    width: 70%;
+}
+.is-text .subtitle{
+	width: 70%;
+    margin: auto;
+    color: white;
+}
 .italic{
 	font-style: italic;
 }
@@ -40,12 +60,92 @@ nav .nav-left{
 .notification .info-skill{
 	max-width: 700px;
 	z-index: 2;
+	display: block;
+	transition: .3s ease-in-out;
 }
 .info-skill .logo{
 	max-width: 30px;
 	margin: auto 0;
     position: absolute;
-    top: 15%;
+    top: 25%;
     right: 3%;
-    z-index: -1;
+    z-index: 0;
+    opacity: .4;
+	-webkit-transition: transform .33s ease-in-out;
+	-moz-transition: transform .33s ease-in-out;
+	-ms-transition: transform .33s ease-in-out;
+	-o-transition: transform .33s ease-in-out;
+	transition: transform .33s ease-in-out;
+	
 }
+.info-skill .logo:hover{
+	transform: translate(5px, 3px) rotate(11deg);
+}
+
+.info-skill .progress{
+	margin-top: 2rem;
+}
+
+
+
+/* -|-|-|-|-|-|-|-|-|-|-|-|-|-|-  MEDIA QUERIES |-|-|-|-|-|-|-|-|-|-|-|-|-|- */
+
+/*  MOBILE ONLY  */
+@media screen and (max-width: 768px) {
+    section.is-text{
+  		height: 400px;
+    }
+    .hero-body .icon{
+    	display: block;
+    }
+    .is-text .title{
+		font-size: 2rem;
+	    width: 90%;
+	    padding: 10px;
+	    border-left: 2px dotted whitesmoke;
+    	border-right: 2px dotted whitesmoke;
+	}
+}
+
+/*  TABLET  */
+@media screen and (min-width: 769px) {
+  .is-block-tablet {
+    display: block !important;
+  }
+}
+
+/*  TABLET ONLY  */
+@media screen and (min-width: 769px) and (max-width: 979px) {
+  .is-block-tablet-only {
+    display: block !important;
+  }
+}
+
+/*  TOUCH  */
+@media screen and (max-width: 979px) {
+    .is-text .title{
+	    color: white;
+	    margin-top: 19%;
+	}
+}
+
+/*  DESKTOP  */
+@media screen and (min-width: 980px) {
+  .is-block-desktop {
+    display: block !important;
+  }
+}
+
+/*  DESKTOP ONLY  */
+@media screen and (min-width: 980px) and (max-width: 1179px) {
+  .is-block-desktop-only {
+    display: block !important;
+  }
+}
+
+/*  WIDESCREEN  */
+@media screen and (min-width: 1180px) {
+	.is-text .subtitle{
+		color: inherit;
+	}
+ }
