@@ -56,10 +56,9 @@
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-	<script src="http://iamdustan.com/smoothscroll/src/smoothscroll.js"></script>
   </head>
 
-  <body class="body-white">
+  <body class="body-white" data-hijacking="off" data-animation="scaleDown">
 
 	<section class="hero is-text">
 		<div class="hero-head">
@@ -83,7 +82,7 @@
 					    </a>
 					</div>
 					<div class="nav-center">
-					    <a class="nav-item is-brand" href="#">
+					    <a class="nav-item is-brand js-scrollTo" href="#top">
         					<span>Abderahmen MAIZA</span>
 					    </a>
 				  	</div>
@@ -92,43 +91,48 @@
 						<span></span>
 						<span></span>
 					</span>
-					<div id="nav-menu" href="#skills" class="nav-right nav-menu">
-						<a class="nav-item btn js-scroll-to-top" title="Skills">
+					<div id="nav-menu" class="nav-right nav-menu">
+						<a class="nav-item js-scrollTo" href="#skills" title="Skills">
 							<span class="icon">
 					        	<i class="fa fa-bolt" aria-hidden="true"></i>
 					      	</span><span class="is-hidden-tablet-only">Skills</span>
 					    </a>
-						<a class="nav-item" href="#projects" title="Projects">
+						<a class="nav-item js-scrollTo" href="#projects" title="Projects">
 							<span class="icon">
 					        	<i class="fa fa-pencil-square-o" aria-hidden="true"></i>
 					      	</span><span class="is-hidden-tablet-only">Projects</span>
 						</a>
-						<a class="nav-item" href="#clients" title="Clients">
+						<a class="nav-item js-scrollTo" href="#clients" title="Clients">
 							<span class="icon">
-					        	<i class="fa fa-users" aria-hidden="true"></i>
+					        	<i class="fa fa-user" aria-hidden="true"></i>
 					      	</span><span class="is-hidden-tablet-only">Clients</span>
 						</a>
-						<a class="nav-item btn js-scroll-to-bottom" href="#contact" title="Contact">
+						<a class="nav-item js-scrollTo" href="#contact" title="contact">
 							<span class="icon">
-					        	<i class="fa fa-paper-plane" aria-hidden="true"></i>
+					        	<i class="fa fa-paper-plane-o" aria-hidden="true"></i>
 					      	</span><span class="is-hidden-tablet-only">Contact</span>
-					     </a>
+						</a>
+
 					</div>
 				</nav>
 
 	    	</div>
 		</div>
 
-		<div class="hero-body">
+		<div id="top" class="hero-body">
 			<div class="container has-text-centered">
         		<h2 class="title">
         			<span class="icon is-large">
 		          		<i class="fa fa-magic" aria-hidden="true"></i>
 		        	</span>
         			<strong>Intégrateur web</strong> en <a href="https://www.hopwork.fr/profile/abderrahmenmaiza" target="_blank">freelance</a>, je fais et défais des sites web depuis 2012.<br/>
-        			Découvrez mes <a href="#projects">projets</a>.
+        			Découvrez mes <a class="js-scrollTo" href="#projects">projets</a>.
         		</h2>
         		<h3 class="subtitle is-hidden-touch italic">Avant, j'étais apprenti-sociologue avec un Master 2 en poche, mais ça c'était avant...</h3>
+
+        		<a class="fleche js-scrollTo" href="#skills">
+        			<i class="fa fa-chevron-down"></i>
+        		</a>
 			</div>
 		</div>
 	</section>
@@ -284,57 +288,33 @@
 		</div>
 	</section>
 	
-    <footer class="footer">
+    <footer id="contact" class="footer">
     	<div class="container">
     		<div class="content has-text-centered">
-    			<h3 class="subtitle">Ce petit portfolio a été développé en décembre 2016, avec un nouveau framework CSS basé sur Flexbox, <a href="http://bulma.io/">Bulma</a></h3>
-    			<span id="#contact">
-    				<a href="mailto:abdermaiza@gmail.com" title="abdermaiza@gmail.com">
-    					<i class="fa fa-send" aria-hidden="true"></i>
-    				</a>
-    			</span>
+    			<h3 class="subtitle is-6">Ce petit portfolio a été développé en décembre 2016, avec un nouveau framework CSS basé sur Flexbox, <a href="http://bulma.io/">Bulma</a></h3>
+    			<span>
+    				<i class="fa fa-send" aria-hidden="true"></i> 
+    			</span><br><br>
+    			<a href="mailto:abdermaiza@gmail.com" title="abdermaiza@gmail.com">abdermaiza@gmail.com</a>
     		</div>
     	</div>
     </footer>
        
 	<script src="http://bulma.io/javascript/jquery-2.2.0.min.js"></script>
 	<script src="http://bulma.io/javascript/clipboard.min.js"></script>
+	<script src="js/scroll.js"></script>
 	<script src="js/main.js"></script>
+	
 	<script>
-	    // add event listener on load
-	    window.addEventListener('load', function() {
-
-	      // scroll to bottom
-	      document.querySelector('.js-scroll-to-bottom').addEventListener('click', function(e) {
-	        e.preventDefault();
-	        window.scrollTo({ top: document.body.clientHeight - window.innerHeight, left: 0, behavior: 'smooth' });
-	      });
-
-	      // scroll to top
-	      document.querySelector('.js-scroll-to-top').addEventListener('click', function(e) {
-	        e.preventDefault();
-	        document.querySelector('header').scrollIntoView({ behavior: 'smooth' });
-	      });
-
-	      // scroll by
-	      document.querySelector('.js-scroll-by').addEventListener('click', function(e) {
-	        e.preventDefault();
-	        window.scrollBy({ top: 100, left: 0, behavior: 'smooth' });
-	      });
-
-	      // scroll back
-	      document.querySelector('.js-scroll-back').addEventListener('click', function(e) {
-	        e.preventDefault();
-	        window.scrollBy({ top: -100, left: 0, behavior: 'smooth' });
-	      });
-
-	      // scroll into view
-	      document.querySelector('.js-scroll-into-hello').addEventListener('click', function(e) {
-	        e.preventDefault();
-	        document.querySelector('.hello').scrollIntoView({ behavior: 'smooth' });
-	      });
-	    });
-  	</script>
+		$(document).ready(function() {
+			$('.js-scrollTo').on('click', function() { // Au clic sur un élément
+				var page = $(this).attr('href'); // Page cible
+				var speed = 500; // Durée de l'animation (en ms)
+				$('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+				return false;
+			});
+		});
+	</script>
 
   </body>
 
