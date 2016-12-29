@@ -1,7 +1,6 @@
 .body-white{
 	background-color: white;
 }
-
 body > .section{
     margin: 50px auto;
 }
@@ -25,8 +24,6 @@ section#skills{
 	-o-transform: scale(0.9);
 	-ms-transform: scale(0.9);
 }
-
-
 .fleche:hover,
 .fleche:active,
 .fleche:focus{
@@ -61,9 +58,9 @@ nav .icon{
     background: white;
 }
 section.is-text{
-	background: url(https://images.unsplash.com/photo-1470399332216-237209aa628e?dpr=1.25&auto=compress,format&fit=crop&w=1199&h=899&q=80&cs=tinysrgb&crop=);
+	background:url(../img/threes-background.jpg) center top;
 	background-size: cover;
-	background-repeat: no;    
+	background-repeat: no-repeat;    
 	width: 100%;
     height: 700px;
 }
@@ -80,7 +77,6 @@ section.is-text{
 	-o-animation:      appear-title 1.2s; 
 	animation:         appear-title 1.2s; 
 }
-
 @-webkit-keyframes appear-title {
   0%   { opacity: 0;transform: translateY(-30px); }
   20%  { opacity: 0; }
@@ -105,7 +101,6 @@ section.is-text{
   40%  { opacity: 0.2; }
   100% { opacity: 1;transform: translateY(0px); }
 }
-
 .is-text .subtitle{
 	width: 70%;
     margin: auto;
@@ -114,15 +109,12 @@ section.is-text{
 .italic{
 	font-style: italic;
 }
-
 .hero-body{
 	margin-top: 60px;
 }
-
 .skills, .skills .button{
 	margin-bottom: 1.5rem;
 }
-
 .box img{
 	border-radius: 5px;
 }
@@ -145,26 +137,22 @@ section.is-text{
 	-ms-transition: transform .33s ease-in-out;
 	-o-transition: transform .33s ease-in-out;
 	transition: transform .33s ease-in-out;
-	
 }
 .info-skill .logo:hover{
 	transform: translate(5px, 3px) rotate(11deg);
 }
-
 .info-skill .progress{
 	margin-top: 2rem;
 }
 
-
 /* -|-|-|-|-|-|-|-|-|-|-|-|-|-|-  MEDIA QUERIES |-|-|-|-|-|-|-|-|-|-|-|-|-|- */
-
 /*  MOBILE ONLY  */
 @media screen and (max-width: 768px) {
 	.nav-left .nav-item{
 		padding-left: 10px !important;
 	}
     section.is-text{
-  		height: 400px;
+  		height: 450px;
     }
     .hero-body .icon{
     	display: block;
@@ -192,42 +180,32 @@ section.is-text{
 	    padding-top: 20%;
 	}
 }
-
 /*  TABLET  */
 @media screen and (min-width: 769px) {
     .is-text .title{
 	    margin-top: 19%;
 	}
 }
-
 /*  TABLET ONLY  */
 @media screen and (min-width: 769px) and (max-width: 979px) {
-  .is-block-tablet-only {
-    display: block !important;
-  }
-}
 
+}
 /*  TOUCH  */
 @media screen and (max-width: 979px) {
     .is-text .title{
 	    color: white;
 	}
 }
-
 /*  DESKTOP  */
 @media screen and (min-width: 980px) {
     .is-text .title{
 	    margin-top: 10vh;
 	}
 }
-
 /*  DESKTOP ONLY  */
 @media screen and (min-width: 980px) and (max-width: 1179px) {
-  .is-block-desktop-only {
-    display: block !important;
-  }
-}
 
+}
 /*  WIDESCREEN  */
 @media screen and (min-width: 1180px) {
 	.is-text .subtitle{
