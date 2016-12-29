@@ -56,10 +56,7 @@
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <!-- Google Analytics -->
-	<script type="text/javascript" async>
-	</script>
-	<!-- End Analytics -->
+	<script src="http://iamdustan.com/smoothscroll/src/smoothscroll.js"></script>
   </head>
 
   <body class="body-white">
@@ -95,8 +92,8 @@
 						<span></span>
 						<span></span>
 					</span>
-					<div id="nav-menu" class="nav-right nav-menu">
-						<a class="nav-item" href="#skills" title="Skills">
+					<div id="nav-menu" href="#skills" class="nav-right nav-menu">
+						<a class="nav-item btn js-scroll-to-top" title="Skills">
 							<span class="icon">
 					        	<i class="fa fa-bolt" aria-hidden="true"></i>
 					      	</span><span class="is-hidden-tablet-only">Skills</span>
@@ -111,7 +108,7 @@
 					        	<i class="fa fa-users" aria-hidden="true"></i>
 					      	</span><span class="is-hidden-tablet-only">Clients</span>
 						</a>
-						<a class="nav-item" href="#contact" title="Contact">
+						<a class="nav-item btn js-scroll-to-bottom" href="#contact" title="Contact">
 							<span class="icon">
 					        	<i class="fa fa-paper-plane" aria-hidden="true"></i>
 					      	</span><span class="is-hidden-tablet-only">Contact</span>
@@ -303,8 +300,41 @@
 	<script src="http://bulma.io/javascript/jquery-2.2.0.min.js"></script>
 	<script src="http://bulma.io/javascript/clipboard.min.js"></script>
 	<script src="js/main.js"></script>
-	<script type="text/javascript" src="http://bulma.io/javascript/index.js"></script>
+	<script>
+	    // add event listener on load
+	    window.addEventListener('load', function() {
 
+	      // scroll to bottom
+	      document.querySelector('.js-scroll-to-bottom').addEventListener('click', function(e) {
+	        e.preventDefault();
+	        window.scrollTo({ top: document.body.clientHeight - window.innerHeight, left: 0, behavior: 'smooth' });
+	      });
+
+	      // scroll to top
+	      document.querySelector('.js-scroll-to-top').addEventListener('click', function(e) {
+	        e.preventDefault();
+	        document.querySelector('header').scrollIntoView({ behavior: 'smooth' });
+	      });
+
+	      // scroll by
+	      document.querySelector('.js-scroll-by').addEventListener('click', function(e) {
+	        e.preventDefault();
+	        window.scrollBy({ top: 100, left: 0, behavior: 'smooth' });
+	      });
+
+	      // scroll back
+	      document.querySelector('.js-scroll-back').addEventListener('click', function(e) {
+	        e.preventDefault();
+	        window.scrollBy({ top: -100, left: 0, behavior: 'smooth' });
+	      });
+
+	      // scroll into view
+	      document.querySelector('.js-scroll-into-hello').addEventListener('click', function(e) {
+	        e.preventDefault();
+	        document.querySelector('.hello').scrollIntoView({ behavior: 'smooth' });
+	      });
+	    });
+  	</script>
 
   </body>
 
