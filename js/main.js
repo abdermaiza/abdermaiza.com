@@ -55,16 +55,22 @@ jQuery(document).ready(function ($) {
       return trigger.previousSibling;
     }
   });
-
+// code personnalisé pour les skills au clic, la nav-menu au clic et les projets au survol
 	$('.notification .button').on('click', function(){
 		$(this).siblings('.info-skill').toggleClass('is-hidden');
 	});
-
 
   $('#nav-menu .nav-item').on('click', function(){
     $('.nav-menu').removeClass('is-active');
   });
 
+  $('.projects-img').hover(function(){
+    $(this).parents('a').siblings('.subtitle').toggleClass('white');
+  });
+
+  $('.projects-img').hover(function(){
+    $(this).parents('a').siblings('.title').toggleClass('scale');
+  });
 
 });
 

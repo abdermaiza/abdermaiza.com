@@ -63,9 +63,7 @@ section.is-text{
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;   
-	width: 100%;
     height: 700px;
-
 }
 .is-text .title{
 	font-size: 3rem;
@@ -147,8 +145,49 @@ section.is-text{
 .info-skill .progress{
 	margin-top: 2rem;
 }
+.double-project{
+	margin-top: 20px;
+}
+.projects-img{
+	filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+	transition: .5s ease-in-out;
+}
+.projects-img:hover{
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    -ms-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
+}
+.double-project .title{
+	font-variant: small-caps;
+	text-decoration: overline;
+	transition: .5s ease-in-out;
+}
+.double-project .title.scale{
+	transform: scale(1.03);
+}
+.hero.is-primary .double-project .subtitle{
+	margin-top: .5rem;
+	color: #00d1b2;
+	transition: .5s ease;
+	font-weight: 400;
+}
+.hero.is-primary .double-project .subtitle span{
+	font-style: italic;
+}
+.hero.is-primary .double-project .subtitle.white{
+	color: inherit;	
+}
 footer{
 	background: url("https://subtlepatterns.com/patterns/shattered.png");
+}
+footer .fa-send{
+	color: #00d1b2;
 }
 /* -|-|-|-|-|-|-|-|-|-|-|-|-|-|-  MEDIA QUERIES |-|-|-|-|-|-|-|-|-|-|-|-|-|- */
 /*  MOBILE ONLY  */
@@ -182,6 +221,9 @@ footer{
 	}
 	section#skills{
 	    padding-top: 20%;
+	}
+	.hero.is-primary .double-project .subtitle{
+		color: inherit;
 	}
 }
 /*  TABLET  */
