@@ -72,6 +72,7 @@ jQuery(document).ready(function ($) {
     $(this).parents('a').siblings('.title').toggleClass('scale');
   });
 
+  // Parallax effect with header
   $(window).scroll(function(){
       var wScroll = $(this).scrollTop();
 
@@ -92,6 +93,3 @@ jQuery(document).ready(function ($) {
   });
 
 });
-
-
-

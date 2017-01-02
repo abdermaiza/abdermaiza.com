@@ -15,24 +15,9 @@ body > .section{
 	border: 2px solid;
     padding: 1.5rem .3rem;
     border-radius: 50%;
-	/*transition: .4s ease-in-out;
-	-webkit-transition: .4s ease-in-out;
-	-moz-transition: .4s ease-in-out;
-	-o-transition: .4s ease-in-out;
-	transform: scale(0.9);
-	-webkit-transform: scale(0.9);
-	-moz-transform: scale(0.9);
-	-o-transform: scale(0.9);
-	-ms-transform: scale(0.9);*/
 }
 .fleche:hover{
 	opacity: .7;
-	/*color: white;*/
-/*	transform: scale(1.1);
-	-webkit-transform: scale(1.1);
-	-moz-transform: scale(1.1);
-	-o-transform: scale(1.1);
-	-ms-transform: scale(1.1);*/
 }
 .fleche i{
 	min-width: 4rem;
@@ -70,8 +55,7 @@ nav .icon{
     margin-top: 9%;
     width: 70%;
 }
-.presentation,
-.before{
+.presentation{
     -webkit-animation: appear-title 1.2s; 
 	-moz-animation:    appear-title 1.2s; 
 	-o-animation:      appear-title 1.2s; 
@@ -101,8 +85,33 @@ nav .icon{
   40%  { opacity: 0.2; }
   100% { opacity: 1;transform: translateY(0px); }
 }
+.before{
+    -webkit-animation: appear-subtitle 2s; 
+	-moz-animation:    appear-subtitle 2s; 
+	-o-animation:      appear-subtitle 2s; 
+	animation:         appear-subtitle 2s; 
+}
+@-webkit-keyframes appear-subtitle {
+  0%   { opacity: 0;transform: translateY(-30px); }
+  50%  { opacity: 0.2; }
+  100% { opacity: 1;transform: translateY(0px); }
+}
+@-moz-keyframes appear-subtitle {
+  0%   { opacity: 0;transform: translateY(-30px); }
+  50%  { opacity: 0.2; }
+  100% { opacity: 1;transform: translateY(0px); }
+}
+@-o-keyframes appear-subtitle {
+  0%   { opacity: 0;transform: translateY(-30px); }
+  50%  { opacity: 0.2; }
+  100% { opacity: 1;transform: translateY(0px); }
+}
+@keyframes appear-subtitle {
+  0%   { opacity: 0;transform: translateY(-30px); }
+  50%  { opacity: 0.2; }
+  100% { opacity: 1;transform: translateY(0px); }
+}
 .subtitle.before{
-	width: 70%;
     margin: auto;
     color: black;
 }
@@ -237,11 +246,14 @@ footer .fa-send{
 	    margin-top: 19%;
 	}
 	.fore{
-	    margin-top: -5vh;
+	    margin-top: -8vh;
 	}
 }
 /*  TABLET ONLY  */
 @media screen and (min-width: 769px) and (max-width: 979px) {
+	.is-text{
+	    height: 50vh;
+	}
 }
 /*  TOUCH  */
 @media screen and (max-width: 979px) {
