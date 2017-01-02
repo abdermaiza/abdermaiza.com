@@ -49,11 +49,12 @@ nav .icon{
     height: 100vh;
     overflow: hidden;
 }
-.is-text .title{
+.title.presentation{
 	font-size: 3rem;
 	margin: 25px auto;
     margin-top: 9%;
     width: 70%;
+    color: black;
 }
 .presentation{
     -webkit-animation: appear-title 1.2s; 
@@ -221,7 +222,6 @@ footer .fa-send{
 	    padding: 10px;
 	    margin-top: 0;    
 	    line-height: 1.5;
-	    color: black;
 	}
 	.presentation a,
 	.presentation a:hover,{
@@ -251,9 +251,6 @@ footer .fa-send{
 }
 /*  TABLET ONLY  */
 @media screen and (min-width: 769px) and (max-width: 979px) {
-	.is-text{
-	    height: 50vh;
-	}
 }
 /*  TOUCH  */
 @media screen and (max-width: 979px) {
