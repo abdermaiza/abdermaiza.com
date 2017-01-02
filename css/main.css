@@ -207,6 +207,12 @@ footer{
 footer .fa-send{
 	color: #00d1b2;
 }
+.link-footer{
+	text-decoration: underline;
+}
+.link-footer:hover{
+	text-decoration: none;
+}
 /* -|-|-|-|-|-|-|-|-|-|-|-|-|-|-  MEDIA QUERIES |-|-|-|-|-|-|-|-|-|-|-|-|-|- */
 /*  MOBILE ONLY  */
 @media screen and (max-width: 768px) {
