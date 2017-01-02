@@ -5,7 +5,7 @@
 body > .section{
     margin: 50px auto;
 }
-section#skills{
+.section.section-skills{
 	margin: 0 auto;
     padding-top: 10%;
 }
@@ -15,7 +15,7 @@ section#skills{
 	border: 2px solid;
     padding: 1.5rem .3rem;
     border-radius: 50%;
-	transition: .4s ease-in-out;
+	/*transition: .4s ease-in-out;
 	-webkit-transition: .4s ease-in-out;
 	-moz-transition: .4s ease-in-out;
 	-o-transition: .4s ease-in-out;
@@ -23,18 +23,16 @@ section#skills{
 	-webkit-transform: scale(0.9);
 	-moz-transform: scale(0.9);
 	-o-transform: scale(0.9);
-	-ms-transform: scale(0.9);
+	-ms-transform: scale(0.9);*/
 }
-.fleche:hover,
-.fleche:active,
-.fleche:focus{
+.fleche:hover{
 	opacity: .7;
-	color: white;
-	transform: scale(1.1);
+	/*color: white;*/
+/*	transform: scale(1.1);
 	-webkit-transform: scale(1.1);
 	-moz-transform: scale(1.1);
 	-o-transform: scale(1.1);
-	-ms-transform: scale(1.1);
+	-ms-transform: scale(1.1);*/
 }
 .fleche i{
 	min-width: 4rem;
@@ -58,12 +56,13 @@ nav .icon{
     z-index: 100;
     background: white;
 }
-section.is-text{
+.is-text{
 	background:url(../img/threes-background.jpg) center top;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;   
-    height: 700px;
+    height: 100vh;
+    overflow: hidden;
 }
 .is-text .title{
 	font-size: 3rem;
@@ -71,8 +70,8 @@ section.is-text{
     margin-top: 9%;
     width: 70%;
 }
-.is-text .title,
-.is-text .subtitle{
+.presentation,
+.before{
     -webkit-animation: appear-title 1.2s; 
 	-moz-animation:    appear-title 1.2s; 
 	-o-animation:      appear-title 1.2s; 
@@ -102,10 +101,10 @@ section.is-text{
   40%  { opacity: 0.2; }
   100% { opacity: 1;transform: translateY(0px); }
 }
-.is-text .subtitle{
+.subtitle.before{
 	width: 70%;
     margin: auto;
-    color: white;
+    color: black;
 }
 .italic{
 	font-style: italic;
@@ -113,7 +112,16 @@ section.is-text{
 .hero-body{
 	margin-top: 60px;
 }
-.skills, .skills .button{
+.fore{
+    background: url(../img/fore-bird22.png) center bottom no-repeat;
+    width: 222px;
+    height: 303px;
+    margin-top: -110px;
+    box-shadow: transparent 4px 12px 20px;
+    display: inline-flex;
+}
+.skills,
+.skills .button{
 	margin-bottom: 1.5rem;
 }
 .box img{
@@ -177,11 +185,11 @@ section.is-text{
 	transition: .5s ease;
 	font-weight: 400;
 }
+.hero.is-primary .double-project .subtitle.white{
+	color: white;
+}
 .hero.is-primary .double-project .subtitle span{
 	font-style: italic;
-}
-.hero.is-primary .double-project .subtitle.white{
-	color: inherit;	
 }
 footer{
 	background: url("https://subtlepatterns.com/patterns/shattered.png");
@@ -196,30 +204,27 @@ footer .fa-send{
 		padding-left: 10px !important;
 	}
     section.is-text{
-  		height: 450px;
+  		height: calc(100vh + 60px);
     }
-    .hero-body .icon{
-    	display: block;
-    }
-    .is-text .title{
+    .title.presentation{
 		font-size: 2rem;
 	    width: 90%;
 	    padding: 10px;
 	    margin-top: 0;    
 	    line-height: 1.5;
-		text-shadow: 1px 1px 4px black;
+	    color: black;
 	}
-	.title .icon{
-		display: none;
-	}
-	.title a,
-	.title a:hover,{
+	.presentation a,
+	.presentation a:hover,{
 		text-shadow: none;
 	}
 	.fleche{
 		margin: .5rem;
 	}
-	section#skills{
+	.fore{
+		margin-top: 11vh;
+	}
+	.section-skills{
 	    padding-top: 20%;
 	}
 	.hero.is-primary .double-project .subtitle{
@@ -228,8 +233,11 @@ footer .fa-send{
 }
 /*  TABLET  */
 @media screen and (min-width: 769px) {
-    .is-text .title{
+    .presentation{
 	    margin-top: 19%;
+	}
+	.fore{
+	    margin-top: -5vh;
 	}
 }
 /*  TABLET ONLY  */
@@ -237,17 +245,17 @@ footer .fa-send{
 }
 /*  TOUCH  */
 @media screen and (max-width: 979px) {
-    .is-text .title{
-	    color: white;
-	}
 }
 /*  DESKTOP  */
 @media screen and (min-width: 980px) {
-    .is-text .title{
+    .presentation{
 	    margin-top: 10vh;
 	}
-	.title+.subtitle{
+	.presentation+.subtitle{
 		margin-top: 10px !important;
+	}
+	.fore{
+	    margin-top: -10vh;
 	}
 }
 /*  DESKTOP ONLY  */
@@ -255,9 +263,6 @@ footer .fa-send{
 }
 /*  WIDESCREEN  */
 @media screen and (min-width: 1180px) {
-	.is-text .subtitle{
-		color: inherit;
-	}
  }
 /*  PARRALAX EFFETCTS  */
  @supports ((perspective: 1px) and (not (-webkit-overflow-scrolling: touch))) {

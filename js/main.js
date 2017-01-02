@@ -72,6 +72,25 @@ jQuery(document).ready(function ($) {
     $(this).parents('a').siblings('.title').toggleClass('scale');
   });
 
+  $(window).scroll(function(){
+      var wScroll = $(this).scrollTop();
+
+      $('.fore').css({
+        'transform' : 'translate(0px, '+ wScroll /5 + '%)'
+      });
+
+      $('.fleche').css({
+        'transform' : 'translate(0px, '+ wScroll /2 + '%)'
+      });
+      $('.presentation').css({
+        'transform' : 'translate(0px, '+ wScroll /2 + '%)'
+      });
+      $('.before').css({
+        'transform' : 'translate(0px, '+ wScroll /2 + '%)'
+      });
+
+  });
+
 });
 
 
