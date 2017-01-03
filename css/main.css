@@ -122,14 +122,6 @@ nav .icon{
 .hero-body{
 	margin-top: 60px;
 }
-.fore{
-    background: url(../img/fore-bird22.png) center bottom no-repeat;
-    width: 222px;
-    height: 303px;
-    margin-top: -110px;
-    box-shadow: transparent 4px 12px 20px;
-    display: inline-flex;
-}
 .skills,
 .skills .button{
 	margin-bottom: 1.5rem;
@@ -236,9 +228,6 @@ footer .fa-send{
 	.fleche{
 		margin: .5rem;
 	}
-	.fore{
-		margin-top: 11vh;
-	}
 	.section-skills{
 	    padding-top: 20%;
 	}
@@ -250,9 +239,6 @@ footer .fa-send{
 @media screen and (min-width: 769px) {
     .presentation{
 	    margin-top: 19%;
-	}
-	.fore{
-	    margin-top: -8vh;
 	}
 }
 /*  TABLET ONLY  */
@@ -269,9 +255,6 @@ footer .fa-send{
 	.presentation+.subtitle{
 		margin-top: 10px !important;
 	}
-	.fore{
-	    margin-top: -10vh;
-	}
 }
 /*  DESKTOP ONLY  */
 @media screen and (min-width: 980px) and (max-width: 1179px) {
@@ -279,7 +262,3 @@ footer .fa-send{
 /*  WIDESCREEN  */
 @media screen and (min-width: 1180px) {
  }
-/*  PARRALAX EFFETCTS  */
- @supports ((perspective: 1px) and (not (-webkit-overflow-scrolling: touch))) {
-  /* ... parallax styles ... */
-}
