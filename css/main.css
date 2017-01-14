@@ -3,7 +3,7 @@
 	scroll-behavior: smooth;
 }
 body > .section{
-    margin: 50px auto;
+    margin: 0px auto;
 }
 .section.section-skills{
 	margin: 0 auto;
@@ -202,6 +202,31 @@ nav .icon{
 .hero.is-primary .double-project .subtitle span{
 	font-style: italic;
 }
+.hopwork{
+    padding: 40px;
+}
+.hopwork .content h2{
+	line-height: 1.5;
+}
+.hopwork .content a:not(.button){
+	border-bottom: none;
+}
+.img-hopwork{
+	filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+	transition: .4s ease-in-out;
+}
+.img-hopwork:hover{
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    -ms-filter: grayscale(0%);
+    -o-filter: grayscale(0%);	
+    transform: scale(1.05);
+}
 footer{
 	background: url("https://subtlepatterns.com/patterns/shattered.png");
 }
@@ -242,6 +267,9 @@ footer .fa-send{
 	}
 	.hero.is-primary .double-project .subtitle{
 		color: inherit;
+	}
+	.img-hopwork{
+		width: 33%;
 	}
 }
 /*  TABLET  */
