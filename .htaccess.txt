@@ -50,6 +50,16 @@ Header append Vary User-Agent env=!dont-vary
         </IfModule>
         FileETag None
 
+        ## Bloquer le contenu quand une attaque XSS est suspectée :
+        <IfModule mod_headers.c>
+               Header always set X-XSS-Protection "1; mode=block"
+	</IfModule>
+
+	## Désactivez la détection auto du type des ressources :
+	<IfModule mod_headers.c>
+		Header always set X-Content-Type-Options "nosniff"
+	</IfModule>
+
         # On active ensuite la compression par type de fichiers
         AddOutputFilterByType DEFLATE application/atom_xml
         AddOutputFilterByType DEFLATE application/rss+xml
@@ -62,6 +72,8 @@ Header append Vary User-Agent env=!dont-vary
         AddOutputFilterByType DEFLATE application/x-javascript
         AddOutputFilterByType DEFLATE application/xhtml+xml
         AddOutputFilterByType DEFLATE image/svg+xml
+        AddOutputFilterByType DEFLATE image/svg
+        AddOutputFilterByType DEFLATE img/svg
         AddOutputFilterByType DEFLATE text/css
         AddOutputFilterByType DEFLATE text/html
         AddOutputFilterByType DEFLATE text/plain
@@ -72,7 +84,7 @@ Header append Vary User-Agent env=!dont-vary
         BrowserMatch ^Mozilla/4 gzip-only-text/html
         BrowserMatch ^Mozilla/4\.0[678] no-gzip
 
-        # Cette ligne est en gÃ©nÃ©ral mise sur tous les tutoriaux mais empÃªche
+        # Cette ligne est en général mise sur tous les tutoriaux mais empÃªche
         # flowplayer de se charger sur Internet Explorer
         #BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
 
@@ -82,14 +94,12 @@ Header append Vary User-Agent env=!dont-vary
 ## contrôle du cache navigateur - Expire headers  
 <IfModule mod_expires.c>  
     ExpiresActive On  
-    ExpiresDefault "access plus 7200 seconds"  
-    ExpiresByType img/jpg             "access plus 1 month"  
-    ExpiresByType work/jpg            "access plus 1 week"  
-	ExpiresByType img/png            "access plus 1 week"  
-    ExpiresByType images/png            "access plus 1 week"  
-    ExpiresByType image/ico             "access plus 1 week"  
-    ExpiresByType text/css              "access plus 1 week"  
-    ExpiresByType text/javascript       "access plus 1 week"  
-    ExpiresByType text/html             "access plus 1 month"  
+    ExpiresDefault "access plus 2 days"  
+    ExpiresByType img/jpg               "access plus 1 month"  
+    ExpiresByType img/png               "access plus 1 month"    
+    ExpiresByType img/svg               "access plus 1 month"  
+    ExpiresByType css/css               "access plus 1 month"  
+    ExpiresByType js/js                 "access plus 1 month"  
+    ExpiresByType text/html             "access plus 1 year"  
 
 </IfModule>

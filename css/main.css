@@ -34,6 +34,14 @@ nav .nav-left{
 nav .icon{
 	color: #00d1b2;
 }
+.nav-left .nav-item{
+	color: #00d1b2;
+    font-weight: bold;
+    font-size: 18px;
+}
+.nav-left .nav-item:hover{
+	color: #00d1b2;
+}
 .hero-head{
 	position: fixed;
     top: 0;
@@ -135,12 +143,12 @@ nav .icon{
 	display: block;
 	transition: .3s ease-in-out;
 }
-.info-skill .logo{
+.notification .logo{
 	max-width: 30px;
 	margin: auto 0;
     position: absolute;
     top: 25%;
-    right: 3%;
+    right: 48%;
     z-index: 0;
     opacity: .4;
 	-webkit-transition: transform .33s ease-in-out;
@@ -149,8 +157,9 @@ nav .icon{
 	-o-transition: transform .33s ease-in-out;
 	transition: transform .33s ease-in-out;
 }
-.info-skill .logo:hover{
+.notification .logo:hover{
 	transform: translate(5px, 3px) rotate(11deg);
+	opacity: .9;
 }
 .info-skill .progress{
 	margin-top: 2rem;
