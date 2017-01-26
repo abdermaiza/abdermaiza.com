@@ -5,6 +5,12 @@
 body > .section{
     margin: 0px auto;
 }
+.hero.is-green{
+	background-color: #00A68D;
+}
+.hero.is-green .title{
+	color: white;
+}
 .section.section-skills{
 	margin: 0 auto;
     padding-top: 10%;
@@ -148,7 +154,7 @@ nav .icon{
 	margin: auto 0;
     position: absolute;
     top: 25%;
-    right: 48%;
+    right: 4%;
     z-index: 0;
     opacity: .4;
 	-webkit-transition: transform .33s ease-in-out;
@@ -158,7 +164,7 @@ nav .icon{
 	transition: transform .33s ease-in-out;
 }
 .notification .logo:hover{
-	transform: translate(5px, 3px) rotate(11deg);
+	transform: translate(0px, -15px) rotate(360deg);
 	opacity: .9;
 }
 .info-skill .progress{
@@ -190,16 +196,16 @@ nav .icon{
 .double-project .title.scale{
 	transform: scale(1.03);
 }
-.hero.is-primary .double-project .subtitle{
+.subtitle.details{
 	margin-top: .5rem;
-	color: #00d1b2;
+	color: #00A68D;
 	transition: .5s ease;
 	font-weight: 400;
 }
-.hero.is-primary .double-project .subtitle.white{
+.subtitle.details.white{
 	color: white;
 }
-.hero.is-primary .double-project .subtitle span{
+.details span{
 	font-style: italic;
 }
 .hopwork{
@@ -231,7 +237,7 @@ footer{
 	background: url("https://subtlepatterns.com/patterns/shattered.png");
 }
 footer .fa-send{
-	color: #00d1b2;
+	color: #00A68D;
 }
 .link-footer{
 	text-decoration: underline;
@@ -265,8 +271,8 @@ footer .fa-send{
 	.section-skills{
 	    padding-top: 20%;
 	}
-	.hero.is-primary .double-project .subtitle{
-		color: inherit;
+	.subtitle.details{
+		color: white;
 	}
 	.img-hopwork{
 		width: 33%;

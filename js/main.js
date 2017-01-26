@@ -65,27 +65,12 @@ jQuery(document).ready(function ($) {
   });
 
   $('.projects-img').hover(function(){
-    $(this).parents('a').siblings('.subtitle').toggleClass('white');
+    $(this).parents('a').siblings('.details').toggleClass('white');
   });
 
   $('.projects-img').hover(function(){
     $(this).parents('a').siblings('.title').toggleClass('scale');
   });
 
-  // Parallax effect with header
-  $(window).scroll(function(){
-      var wScroll = $(this).scrollTop();
-
-      $('.fleche').css({
-        'transform' : 'translate(0px, '+ wScroll /2 + '%)'
-      });
-      $('.presentation').css({
-        'transform' : 'translate(0px, '+ wScroll /2 + '%)'
-      });
-      $('.before').css({
-        'transform' : 'translate(0px, '+ wScroll /2 + '%)'
-      });
-
-  });
 
 });
