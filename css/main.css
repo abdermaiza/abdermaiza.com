@@ -56,7 +56,7 @@ nav .icon{
     background: white;
 }
 .is-text{
-	background:url(../img/threes-background.jpg) center top;
+	background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;   
@@ -234,7 +234,8 @@ nav .icon{
     transform: scale(1.05);
 }
 footer{
-	background: url("https://subtlepatterns.com/patterns/shattered.png");
+	background-repeat: repeat;
+	background-color: grey;
 }
 footer .fa-send{
 	color: #00A68D;
