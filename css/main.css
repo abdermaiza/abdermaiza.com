@@ -5,7 +5,7 @@ body > .section{
     margin: 0px auto;
 }
 .hero.is-green{
-	background-color: #00A68D;
+	background-color: mediumaquamarine;
 }
 .hero.is-green .title{
 	color: white;
@@ -69,6 +69,9 @@ nav .icon{
     width: 70%;
     color: black;
 }
+a.js-scrollTo:hover{
+	color: white;
+}
 .presentation{
     -webkit-animation: appear-title 1.2s; 
 	-moz-animation:    appear-title 1.2s; 
@@ -127,7 +130,7 @@ nav .icon{
 }
 .subtitle.before{
     margin: auto;
-    color: black;
+    color: white;
 }
 .italic{
 	font-style: italic;
@@ -142,11 +145,28 @@ nav .icon{
 .box img{
 	border-radius: 5px;
 }
+.notification.skills{
+	color: black;
+	background-color: transparent;    
+	border-bottom: 1px grey dashed;
+}
+.techno{
+	font-size: 3rem;
+	padding: 1rem;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+.techno:hover{
+	color: slategrey;
+	transition: .5s ease-in-out;
+}
 .notification .info-skill{
-	max-width: 700px;
 	z-index: 2;
+	background-color: gainsboro;
 	display: block;
-	transition: .3s ease-in-out;
+	padding: 1rem;
+    margin: 1rem;
+	transition: .5s ease-in-out;
 }
 .notification .logo{
 	max-width: 30px;
@@ -170,7 +190,7 @@ nav .icon{
 	margin-top: 2rem;
 }
 .double-project{
-	margin-top: 20px;
+	margin-top: 4rem;
 }
 .projects-img{
 	filter: grayscale(100%);
@@ -197,9 +217,11 @@ nav .icon{
 }
 .subtitle.details{
 	margin-top: .5rem;
-	color: #00A68D;
+	color: mediumaquamarine;
 	transition: .5s ease;
 	font-weight: 400;
+	max-width: 500px;
+    margin: 0 auto;
 }
 .subtitle.details.white{
 	color: white;
@@ -273,6 +295,7 @@ footer .fa-send{
 	}
 	.subtitle.details{
 		color: white;
+		max-width: 340px;
 	}
 	.img-hopwork{
 		width: 33%;
