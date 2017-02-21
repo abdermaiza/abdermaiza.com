@@ -1,6 +1,5 @@
 .body-white{
 	background-color: white;
-	scroll-behavior: smooth;
 }
 body > .section{
     margin: 0px auto;
