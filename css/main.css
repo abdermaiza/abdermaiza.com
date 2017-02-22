@@ -142,13 +142,25 @@ a.js-scrollTo:hover{
 .skills .button{
 	margin-bottom: 1.5rem;
 }
+.box.box-grey{
+	background-color: gainsboro;
+}
 .box img{
 	border-radius: 5px;
+}
+.level-item{
+	display: inline-block !important;
 }
 .notification.skills{
 	color: black;
 	background-color: transparent;    
 	border-bottom: 1px grey dashed;
+	height: 7rem;
+	transition: all 350ms ease-in-out;
+}
+.skills.open{
+	height: 19.5rem;
+	height: auto;
 }
 .techno{
 	font-size: 3rem;
@@ -162,11 +174,20 @@ a.js-scrollTo:hover{
 }
 .notification .info-skill{
 	z-index: 2;
-	background-color: gainsboro;
 	display: block;
+	height: auto;
+	visibility: visible;
+	opacity: 1;
 	padding: 1rem;
     margin: 1rem;
-	transition: .5s ease-in-out;
+	transition: all 500ms ease-in;
+}
+.info-skill.hidden{
+	height: 0;
+	margin: 0;
+	visibility: hidden;
+	opacity: 0;
+	transition: all 500ms ease-in;
 }
 .notification .logo{
 	max-width: 30px;
@@ -228,6 +249,8 @@ a.js-scrollTo:hover{
 }
 .details span{
 	font-style: italic;
+	font-weight: 600 !important;
+	color: black;
 }
 .hopwork{
     padding: 40px;
@@ -293,9 +316,18 @@ footer .fa-send{
 	.section-skills{
 	    padding-top: 20%;
 	}
+	.section-skills{
+		text-align: center;
+	}
+	.hero.is-green h1{
+		text-align: center;    
+		font-size: 3rem;
+	}
 	.subtitle.details{
 		color: white;
-		max-width: 340px;
+		max-width: 340px;    
+		font-size: 1.3rem;
+    	line-height: 1.5;
 	}
 	.img-hopwork{
 		width: 33%;

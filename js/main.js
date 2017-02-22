@@ -57,7 +57,8 @@ jQuery(document).ready(function ($) {
   });
 // code personnalisé pour les skills au clic, la nav-menu au clic et les projets au survol
 	$('.notification .techno').on('click', function(){
-		$(this).siblings('.info-skill').toggleClass('is-hidden');
+		$(this).siblings('.info-skill').toggleClass('hidden');
+    $(this).parent(".skills").toggleClass("open");
 	});
 
   $('#nav-menu .nav-item').on('click', function(){
