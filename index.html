@@ -54,6 +54,21 @@
     <link href="css/main.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.1/css/bulma.min.css" rel="stylesheet">
+    	<!-- Google Analytics -->
+	<script type="text/javascript" async>
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-28817879-1']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+	<!-- End Analytics -->
     <script>
 	    // Picture element HTML5 shiv
 	    document.createElement( "picture" );
@@ -63,7 +78,6 @@
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-
   </head>
 
   <body class="body-white" data-hijacking="off" data-animation="scaleDown">
@@ -143,10 +157,11 @@
 				<div class="column is-6">
 				    <h1 class="title is-2">Ma spécialité</h1>
 					<h2 class="subtitle">
-		  				Le développement de <strong>sites Internet responsive</strong> avec tous les outils du développeur front-end :
+		  				Je pars de maquettes Photoshop pour créer ou modifier des pages en responsive design.<br>
+		  				Auncune maquette graphique ne me fait peur, je suis <i>à l'aise </i> !<br>
+		  				J'intègre avec les outils classiques du développeur front-end :
 					</h2>
-				</div>			
-				
+				</div>
 				<div class="column is-6">
 					<div class="box box-grey">
 				        <article class="media">
@@ -183,39 +198,39 @@
 			</div>
 
 			<div class="columns">
-				<div class="column is-6">
+				<div class="column is-6 skill">
+					<img src="img/blank.gif" data-src="img/html-5.svg" class="logo b-lazy" alt="logo Html5">
 					<p class="notification is-bold skills">
 						<span class="techno">HTML</span>			
-						<img src="img/blank.gif" data-src="img/html-5.svg" class="logo b-lazy" alt="logo Html5">
 						<span class="info-skill hidden content is-medium">Je code depuis l'année 2012 en Html, Xhtml et Html 5. Le respect des normes W3C, la sémantique et les règles d'accessibilité me sont familières.
 							<progress class="progress is-medium is-dark" value="90" max="100">90%</progress>						
 						</span>
 					</p>
 				</div>
-				<div class="column is-6">
+				<div class="column is-6 skill">
+					<img src="img/blank.gif" data-src="img/css-3.svg" class="logo b-lazy" alt="logo Css3">	
 					<p class="notification is-bold skills">
 						<span class="techno">CSS</span>
-						<img src="img/blank.gif" data-src="img/css-3.svg" class="logo b-lazy" alt="logo Css3">				
-						<span class="info-skill hidden content is-medium">Que ce soit les frameworks Css, les animations en Css3, le Scss avec Node Js ou bien la compatibilité entre navigateurs avec Caniuse ou Flexbox, on a jamais fini d'en apprendre...
+						<span class="info-skill hidden content is-medium">Que ce soit les frameworks Css, les animations en Css3, le Scss ou bien la compatibilité entre navigateurs avec Caniuse ou Flexbox, on a jamais fini d'en apprendre...
 							<progress class="progress is-medium is-dark" value="85" max="100">85%</progress>
 						</span>
 					</p>
 				</div>
 			</div>
 			<div class="columns">
-				<div class="column is-6">
+				<div class="column is-6 skill">						
+				<img src="img/blank.gif" data-src="img/javascript.svg" class="logo b-lazy" alt="logo Javascript">
 					<p class="notification is-bold skills">
 						<span class="techno">JS</span>
-						<img src="img/blank.gif" data-src="img/javascript.svg" class="logo b-lazy" alt="logo Javascript">		
-						<span class="info-skill hidden content is-medium">Ma petite bête noire.... mes compétences sont encore <i>limitées</i> en Javascript natif, car j'ai plutôt recours à Jquery pour animer des pages web. <blockquotes>Write less, do more !</blockquotes>
+						<span class="info-skill hidden content is-medium">Ma petite bête noire.... mes compétences sont encore <i>limitées</i> en Javascript natif, je me forme durant mes périodes de creux. J'ai plutôt eu recours à Jquery pour animer des pages web. <blockquotes>Write less, do more !</blockquotes>
 							<progress class="progress is-medium is-dark" value="30" max="100">30%</progress>	
 						</span>
 					</p>
 				</div>
-				<div class="column is-6">
+				<div class="column is-6 skill">
+					<img src="img/blank.gif" data-src="img/gulp.svg" class="logo b-lazy" alt="logo Gulp">
 					<p class="notification is-bold skills">
 						<span class="techno">Automatisation</span>
-						<img src="img/blank.gif" data-src="img/gulp.svg" class="logo b-lazy" alt="logo Gulp">			
 						<span class="info-skill hidden content is-medium">Pour développer vite, automatiser les tâches devient de plus en plus nécessaire, entre la minification des Css/Js, la concaténation des fichiers, l'optimisation des images, l'ajout d'autoprefixer. Grunt (ou Gulp) nous permet ainsi de lancer rapidement plusieurs tâches.
 							<progress class="progress is-medium is-dark" value="50" max="100">50%</progress>	
 						</span>
@@ -223,26 +238,25 @@
 				</div>
 			</div>
 			<div class="columns">
-				<div class="column is-6">
+				<div class="column is-6 skill">
+					<img src="img/blank.gif" data-src="img/git-icon.svg" class="logo b-lazy" alt="logo Git">
 					<p class="notification is-bold skills">
-						<span class="techno">Versionning</span>
-						<img src="img/blank.gif" data-src="img/git-icon.svg" class="logo b-lazy" alt="logo Git">				
+						<span class="techno">Versionning</span>	
 						<span class="info-skill hidden content is-medium">J'utilise depuis 2013 ces outils de versionning sur mes projets professionnels, afin de travailler en équipe sur les mêmes fichiers. SVN chez Un monde à deux et Intersport, Git chez Sarenza et Carrefour. Vous pouvez d'ailleurs retrouver cette page sur <a href="https://github.com/abdermaiza/abdermaiza.com">github</a>.
 							<progress class="progress is-medium is-dark" value="45" max="100">45%</progress>
 						</span>
 					</p>
 				</div>
-				<div class="column is-6">
+				<div class="column is-6 skill">
+					<img src="img/blank.gif" data-src="img/photoshop.svg" class="logo b-lazy" alt="logo Photoshop">	
 					<p class="notification is-bold skills">
 						<span class="techno">Photoshop</span>
-						<img src="img/blank.gif" data-src="img/photoshop.svg" class="logo b-lazy" alt="logo Photoshop">					
-						<span class="info-skill hidden content is-medium">A l'aise avec Photoshop, outil indispensable pour respecter au maximum les maquettes du designer : tailles des polices, couleurs utilisées, marges, optimisation et découpage des images. Je crée parfois des affiches événementielles pour une association locale.
+						<span class="info-skill hidden content is-medium">A l'aise avec Photoshop, outil indispensable pour respecter au maximum les maquettes du designer : tailles des polices, couleurs utilisées, marges, optimisation et découpage des images. J'ai même réalisé des affiches événementielles pour une association locale.
 							<progress class="progress is-medium is-dark" value="75" max="100">75%</progress>
 						</span>
 					</p>
 				</div>
 			</div>			
-
 		</div>
 	</section>
 
@@ -256,39 +270,50 @@
 				</div>
 			</div>
 			<div class="columns">
-				<div class="column is-6 has-text-centered double-project">
-					<h2 class="title is-2">Projets INTERSPORT </h2>
-					<a href="http://www.intersport.fr" target="_blank">
+				<div class="column is-4 has-text-centered double-project">
+					<h2 class="title is-2">Projet Manomano </h2>
+					<a href="http://www.manomano.fr" target="_blank">
+						<picture>
+						  <source media="(min-width: 769px)" srcset="img/blank.gif" data-srcset="img/project-manomano-big.jpg">
+						  <img src="img/blank.gif" data-src="img/project-manomano.jpg" class="projects-img b-lazy" alt="image du client Manomano, startup qui cartonne">
+						</picture>
+					</a>
+					<p class="subtitle details">2017 : Refonte du site web <span>Manomano.fr</span> (leader européen de la distribution de bricolage et jardinage sur Internet) avec Webpack, Git, Scrum, BEM (Css), Twig...</p>
+				</div>
+				<div class="column is-4 has-text-centered double-project">
+					<h2 class="title is-2">Projet INTERSPORT </h2>
+					<a href="http://www.intersport.fr/" target="_blank">
 						<picture>
 						  <source media="(min-width: 769px)" srcset="img/blank.gif" data-srcset="img/project-intersport-big.jpg">
-						  <img src="img/blank.gif" data-src="img/project-intersport.jpg" class="projects-img b-lazy" alt="image client Intersport">
+						  <img src="img/blank.gif" data-src="img/project-intersport.jpg" class="projects-img b-lazy" alt="image client Intersport, leader mondial de la distribution d'articles de sport">
 						</picture>
 					</a>
 					<p class="subtitle details">2016 : Refonte totale du site web <span>Intersport.fr</span> avec Grunt, Zurb Foundation 6, Jquery, SVN...</p>
-				</div>
-				<div class="column is-6 has-text-centered double-project">
-					<h2 class="title is-2">Projets ENGIE </h2>
+				</div>				
+				<div class="column is-4 has-text-centered double-project">
+					<h2 class="title is-2">Projet ENGIE </h2>
 					<a href="https://particuliers.engie.fr/" target="_blank">
 						<picture>
 						  <source media="(min-width: 769px)" srcset="img/blank.gif" data-srcset="img/project-engie-big.jpg">
-						  <img src="img/blank.gif" data-src="img/project-engie.jpg" class="projects-img b-lazy" alt="image client ENGIE">
-						</picture>				</a>
+						  <img src="img/blank.gif" data-src="img/project-engie.jpg" class="projects-img b-lazy" alt="image client ENGIE, leader n°4 mondial en electricité.">
+						</picture>				
+					</a>
 					<p class="subtitle details">2016 : Maintenance du site <span>Engie particuliers</span>, avec le CMS AEM d'Adobe et l'outil Mantis</p>
 				</div>
 			</div>
 			<div class="columns">
 				<div class="column is-6 has-text-centered double-project">
-					<h2 class="title is-2">Projets SARENZA </h2>
+					<h2 class="title is-2">Projet SARENZA </h2>
 					<a href="http://www.sarenza.com/style-guide-des-bottines-et-boots" target="_blank">
 						<picture>
 						  <source media="(min-width: 769px)" srcset="img/blank.gif" data-srcset="img/project-sarenza-big.jpg">
-						  <img src="img/blank.gif" data-src="img/project-sarenza.jpg" class="projects-img b-lazy" alt="image client SARENZA">
+						  <img src="img/blank.gif" data-src="img/project-sarenza.jpg" class="projects-img b-lazy" alt="image client SARENZA, leader européen de la vente de chaussures en ligne">
 						</picture>
 					</a>
 					<p class="subtitle details">2015 : Création de pages responsive pour les 10 ans de <span>Sarenza</span>, avec du Scss et Git</p>
 				</div>
 				<div class="column is-6 has-text-centered double-project">
-					<h2 class="title is-2">Projets FULLSIX </h2>
+					<h2 class="title is-2">Projet FULLSIX </h2>
 					<a href="http://group.fullsix.com/#home" target="_blank">
 						<picture>
 						  <source media="(min-width: 769px)" srcset="img/blank.gif" data-srcset="img/project-fullsix-big.jpg">
@@ -327,7 +352,7 @@
     	</div>
     </footer>
        
-	<script src="http://bulma.io/javascript/jquery-2.2.0.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
 	<script src="http://bulma.io/javascript/clipboard.min.js"></script>
 	<script src="js/main.js"></script>
 	<script>

@@ -151,10 +151,13 @@ a.js-scrollTo:hover{
 .level-item{
 	display: inline-block !important;
 }
+.skill {
+	position: relative;
+}
 .notification.skills{
 	color: black;
 	background-color: transparent;    
-	border-bottom: 1px grey dashed;
+	border-bottom: 1px #00d1b2 solid;
 	height: 7rem;
 	transition: all 350ms ease-in-out;
 }
@@ -176,6 +179,7 @@ a.js-scrollTo:hover{
 	z-index: 2;
 	display: block;
 	height: auto;
+	min-height: 202px;
 	visibility: visible;
 	opacity: 1;
 	padding: 1rem;
@@ -189,13 +193,9 @@ a.js-scrollTo:hover{
 	opacity: 0;
 	transition: all 500ms ease-in;
 }
-.notification .logo{
-	max-width: 30px;
-	margin: auto 0;
-    position: absolute;
-    top: 25%;
-    right: 4%;
-    z-index: 0;
+.logo{
+	width: 40px;
+	height: 60px;
     opacity: .4;
 	-webkit-transition: transform .33s ease-in-out;
 	-moz-transition: transform .33s ease-in-out;
@@ -203,7 +203,7 @@ a.js-scrollTo:hover{
 	-o-transition: transform .33s ease-in-out;
 	transition: transform .33s ease-in-out;
 }
-.notification .logo:hover{
+.logo:hover{
 	transform: translate(0px, -15px) rotate(360deg);
 	opacity: .9;
 }
@@ -241,7 +241,7 @@ a.js-scrollTo:hover{
 	color: mediumaquamarine;
 	transition: .5s ease;
 	font-weight: 400;
-	max-width: 500px;
+	max-width: 570px;
     margin: 0 auto;
 }
 .subtitle.details.white{
@@ -338,7 +338,10 @@ footer .fa-send{
     .presentation{
 	    margin-top: 19%;
 	}
-}
+	.logo{
+		width: 30px;
+		margin-left: 2.5rem;
+	}
 /*  TABLET ONLY  */
 @media screen and (min-width: 769px) and (max-width: 979px) {
 }
