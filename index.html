@@ -7,7 +7,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, shrink-to-fit=no">
     <title>L'intégrateur web MAIZA vous expose son portfolio</title>
-    <!-- <base target="_blank" href="http://www.abdermaiza.com/"> -->
+    <base target="_blank" href="http://www.abdermaiza.com/">
     <meta name="description" content="Abderahmen Ma&iuml;za - Int&eacute;grateur au service de votre site web. Intégrateur web réalisant des sites web responsive | abdermaiza.com">
 	<meta name="google" content="notranslate">
 	<meta name="coverage" content="Worldwide">
@@ -27,7 +27,6 @@
 	<meta name="geo.placename" content="Essonne" />
 	<meta name="geo.region" content="FR-91" />
 	<meta name="geo.position" content="46.23;2.21" />
-	<meta name="ICBM" content="46.23, 2.21" />
 	<!-- Mobile Internet Explorer ClearType Technology -->
 	<!--[if IEMobile]>  <meta http-equiv="cleartype" content="on"> <meta name="skype_toolbar" content="skype_toolbar_parser_compatible"> <![endif]-->
 	<link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
@@ -44,11 +43,19 @@
 	<meta name="DC.rights" content="All Right Reserved - Abderahmen MAIZA website" />
 
 	<link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
-	<link rel="iocn" type="img/png" href="img/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="img/png" href="img/favicon-32x32.png" sizes="32x32">
 	<link rel="icon" type="img/png" href="img/favicon-16x16.png" sizes="16x16">
 	<link rel="manifest" href="img/manifest.json">
 	<link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
 	<meta name="theme-color" content="#ffffff">
+    <!-- Twitter CARD -->
+	<meta name="twitter:card" content="Site web Abderrahmen MAIZA">
+	<meta name="twitter:site" content="@MAIZA_Abder">
+	<meta name="twitter:creator" content="@MAIZA_Abder">
+	<meta name="twitter:url" content="http://abdermaiza.com">
+	<meta name="twitter:title" content="Maiza Abderrahmen Portfolio">
+	<meta name="twitter:description" content="Portfolio de l'intégrateur web freelance Abderrahmen MAIZA">
+	<meta name="renderer" content="webkit|ie-comp|ie-stand"> <!-- Chinese browsers -->
 
     <!-- Le style -->    
     <link href="css/main.css" rel="stylesheet">
@@ -82,29 +89,29 @@
 
   <body class="body-white" data-hijacking="off" data-animation="scaleDown">
 
-	<section class="hero is-text b-lazy" data-src="img/threes-background.jpg">
+	<section class="hero is-text b-lazy" data-src="img/hopwork-seance-photo2.jpg">
 		<div class="hero-head">
 			<div class="container">
-				<nav class="nav">
+				<nav class="nav" role="navigation">
 					<div class="nav-left">
-    					<a class="nav-item" href="https://github.com/abdermaiza" title=" Github" target="_blank">
+    					<a class="nav-item" href="https://github.com/abdermaiza" title=" Github" target="_blank" aria-label="Voir mon Github (nouvelle fenêtre)">
 					      <span class="icon">
 					        <i class="fa fa-github" aria-hidden="true"></i>
 					      </span>
 					    </a>
-					    <a class="nav-item" href="img/CV.pdf" title=" CV" target="_blank">
+					    <a class="nav-item" href="img/CV.pdf" title=" CV" target="_blank" aria-label="Voir mon CV (nouvelle fenêtre)">
 						    <span class="icon">
 						    	<i class="fa fa-graduation-cap" aria-hidden="true"></i>
 						    </span>
 					    </a>
-					    <a class="nav-item" href="https://lnkd.in/ibzX5A" title=" Linkedin" target="_blank">
+					    <a class="nav-item" href="https://lnkd.in/ibzX5A" title=" Linkedin" target="_blank" aria-label="Voir mon profil Linkedin (nouvelle fenêtre)">
 					      <span class="icon">
 					        <i class="fa fa-linkedin" aria-hidden="true"></i>
 					      </span>
 					    </a>
 					</div>
 					<div class="nav-center">
-					    <a class="nav-item is-brand js-scrollTo" href="#top">
+					    <a class="nav-item is-brand js-scrollTo" href="#top" title="Revenir en haut">
         					<span>Abderahmen MAIZA</span>
 					    </a>
 				  	</div>
@@ -129,26 +136,32 @@
 					        	<i class="fa fa-paper-plane-o" aria-hidden="true"></i>
 					      	</span><span class="is-hidden-tablet-only">Contact</span>
 						</a>
-
 					</div>
 				</nav>
 
 	    	</div>
 		</div>
 
-		<div id="top" class="hero-body">
+		<div id="top" class="hero-body hero-one">
 			<div class="container has-text-centered">
         		<h1 class="title presentation">
-        			<strong>Intégrateur web</strong> en <strong><a class="js-scrollTo" href="#hopwork">freelance</a></strong>, je fais et défais des sites web depuis 2012.<br/>
+        			<strong>Intégrateur web</strong> en <strong><a class="js-scrollTo" href="#malt">freelance</a></strong>, je fais et défais des sites web depuis 2012.<br/>
         			Découvrez mes <strong><a class="js-scrollTo" href="#projects">projets</a></strong>.
         		</h1>
         		<h2 class="subtitle before is-hidden-touch italic">Avant, j'étais apprenti-sociologue avec un Master 2 en poche, mais ça c'était avant...</h2>
 
         		<a class="fleche js-scrollTo" href="#skills">
+					<span class="sr-only">Voir plus bas</span>
         			<i class="fa fa-chevron-down"></i>
         		</a>
 			</div>
 		</div>
+
+		<div class="hero-body is-hidden-mobile hero-two b-lazy" data-src="img/hopwork-seance-photo3.jpg">
+			<div class="container">
+			</div>
+		</div>
+
 	</section>
 
 	<section id="skills" class="section section-skills hero">
@@ -159,7 +172,7 @@
 					<h2 class="subtitle">
 		  				Je pars de maquettes Photoshop pour créer ou modifier des pages en responsive design.<br>
 		  				Auncune maquette graphique ne me fait peur, je suis <i>à l'aise </i> !<br>
-		  				J'intègre avec les outils classiques du développeur front-end :
+		  				J'intègre avec les outils classiques du développement front :
 					</h2>
 				</div>
 				<div class="column is-6">
@@ -270,67 +283,73 @@
 				</div>
 			</div>
 
-			<div class="columns">
-				<div class="column is-6 has-text-centered double-project">
-					<h2 class="title is-2">Projet Renault </h2>
-					<a href="http://www.renault.fr" target="_blank">
+			<div class="columns has-text-centered">
+				<div class="column is-6 double-project">
+					<h2 class="title is-2 is-hidden-mobile">Projet Renault </h2>
+					<img src="img/logo-renault.png" class="is-hidden-tablet logo-client" alt=""> 
+					<a href="http://www.renault.fr" target="_blank" aria-label="Voir la page du client (nouvelle fenêtre)">
 						<picture>
 						  <source media="(min-width: 769px)" srcset="img/blank.gif" data-srcset="img/project-renault-big.jpg">
-						  <img src="img/blank.gif" data-src="img/project-renault.jpg" class="projects-img b-lazy" alt="image du client Renault">
+						  <img src="img/blank.gif" data-src="img/project-renault.jpg" class="projects-img b-lazy" alt="Mon dernier client : Renault Digital">
 						</picture>
 					</a>
-					<p class="subtitle details">2017 : Création from scratch d'un site pour <span>Renault Digital</span> : Git, Flexbox et environnement Angular 4...</p>
+					<p class="subtitle details">2017 : Création from scratch d'un site pour <span>Renault Digital</span> : Bootstrap 4, Scss, Git et environnement Angular 4...</p>
 				</div>
-				<div class="column is-6 has-text-centered double-project">
-					<h2 class="title is-2">Projet Manomano </h2>
-					<a href="http://www.manomano.fr" target="_blank">
+				<div class="column is-6 double-project">
+					<h2 class="title is-2 is-hidden-mobile">Projet Manomano </h2>
+					<img src="img/logo-manomano.svg" class="is-hidden-tablet logo-client" alt="">
+					<a href="http://www.manomano.fr" target="_blank" aria-label="Voir la page du client (nouvelle fenêtre)">
 						<picture>
 						  <source media="(min-width: 769px)" srcset="img/blank.gif" data-srcset="img/project-manomano-big.jpg">
-						  <img src="img/blank.gif" data-src="img/project-manomano.jpg" class="projects-img b-lazy" alt="image du client Manomano, startup qui cartonne">
+						  <img src="img/blank.gif" data-src="img/project-manomano.jpg" class="projects-img b-lazy" alt="client Manomano, startup qui cartonne">
 						</picture>
 					</a>
 					<p class="subtitle details">2017 : Refonte du site web <span>Manomano.fr</span> (leader européen de la distribution de bricolage et jardinage sur Internet) avec Webpack, Git, Scrum, BEM (Css), Twig...</p>
 				</div>
 			</div>
-			<div class="columns">
-				<div class="column is-6 has-text-centered double-project">
-					<h2 class="title is-2">Projet INTERSPORT </h2>
-					<a href="http://www.intersport.fr/" target="_blank">
+			<div class="columns has-text-centered">
+				<div class="column is-6 double-project">
+					<h2 class="title is-2 is-hidden-mobile">Projet INTERSPORT </h2>
+					<img src="img/logo-intersport.svg" class="is-hidden-tablet logo-client" alt="">
+					<a href="http://www.intersport.fr/" target="_blank" aria-label="Voir la page du client (nouvelle fenêtre)">
 						<picture>
 						  <source media="(min-width: 769px)" srcset="img/blank.gif" data-srcset="img/project-intersport-big.jpg">
-						  <img src="img/blank.gif" data-src="img/project-intersport.jpg" class="projects-img b-lazy" alt="image client Intersport, leader mondial de la distribution d'articles de sport">
+						  <img src="img/blank.gif" data-src="img/project-intersport.jpg" class="projects-img b-lazy" alt="client Intersport, leader mondial de la distribution d'articles de sport">
 						</picture>
 					</a>
 					<p class="subtitle details">2016 : Refonte totale du site web <span>Intersport.fr</span> avec Grunt, Zurb Foundation 6, Jquery, SVN...</p>
 				</div>				
-				<div class="column is-6 has-text-centered double-project">
-					<h2 class="title is-2">Projet ENGIE </h2>
-					<a href="https://particuliers.engie.fr/" target="_blank">
+				<div class="column is-6 double-project">
+					<h2 class="title is- is-2 is-hidden-mobile">Projet ENGIE </h2>
+					<img src="img/logo-engie.png" class="is-hidden-tablet logo-client" alt="">
+					<a href="https://particuliers.engie.fr/" target="_blank" aria-label="Voir la page du client (nouvelle fenêtre)">
 						<picture>
 						  <source media="(min-width: 769px)" srcset="img/blank.gif" data-srcset="img/project-engie-big.jpg">
-						  <img src="img/blank.gif" data-src="img/project-engie.jpg" class="projects-img b-lazy" alt="image client ENGIE, leader n°4 mondial en electricité.">
+						  <img src="img/blank.gif" data-src="img/project-engie.jpg" class="projects-img b-lazy" alt="client ENGIE, leader n°4 mondial en electricité.">
 						</picture>				
 					</a>
 					<p class="subtitle details">2016 : Maintenance du site <span>Engie particuliers</span>, avec le CMS AEM d'Adobe et l'outil Mantis</p>
 				</div>
 			</div>
-			<div class="columns">
-				<div class="column is-6 has-text-centered double-project">
-					<h2 class="title is-2">Projet SARENZA </h2>
-					<a href="http://www.sarenza.com/style-guide-des-bottines-et-boots" target="_blank">
+			<div class="columns has-text-centered">
+				<div class="column is-6 double-project">
+					<h2 class="title is-2 is-hidden-mobile">Projet SARENZA </h2>
+					<img src="img/logo-sarenza.png" class="is-hidden-tablet logo-client" alt="">
+					<a href="http://www.sarenza.com/style-guide-des-bottines-et-boots" target="_blank" aria-label="Voir la page du client (nouvelle fenêtre)">
 						<picture>
 						  <source media="(min-width: 769px)" srcset="img/blank.gif" data-srcset="img/project-sarenza-big.jpg">
-						  <img src="img/blank.gif" data-src="img/project-sarenza.jpg" class="projects-img b-lazy" alt="image client SARENZA, leader européen de la vente de chaussures en ligne">
+						  <img src="img/blank.gif" data-src="img/project-sarenza.jpg" class="projects-img b-lazy" alt="client SARENZA, leader européen de la vente de chaussures en ligne">
 						</picture>
 					</a>
 					<p class="subtitle details">2015 : Création de pages responsive pour les 10 ans de <span>Sarenza</span>, avec du Scss et Git</p>
 				</div>
-				<div class="column is-6 has-text-centered double-project">
-					<h2 class="title is-2">Projet FULLSIX </h2>
-					<a href="http://group.fullsix.com/#home" target="_blank">
+				<div class="column is-6 double-project">
+					<h2 class="title is-2 is-hidden-mobile">Projet FULLSIX </h2>
+					<img src="img/logo-fullsix.png" class="is-hidden-tablet logo-client" alt="">
+					<a href="http://group.fullsix.com/#home" target="_blank" aria-label="Voir la page du client (nouvelle fenêtre)">
 						<picture>
 						  <source media="(min-width: 769px)" srcset="img/blank.gif" data-srcset="img/project-fullsix-big.jpg">
-						  <img src="img/blank.gif" data-src="img/project-fullsix.jpg" class="projects-img b-lazy" alt="image client de FULLSIX">
+						  <img src="img/blank.gif" data-src="img/project-fullsix.jpg" class="projects-img b-lazy" alt="MSD : un gros client de FULLSIX">
 						</picture>					</a>
 					<p class="subtitle details">2014 : Emailing et création de plusieurs pages responsive from scratch pour <span>MSD France</span></p>
 				</div>
@@ -338,12 +357,12 @@
 		</div>
 	</section>
 
-	<section id="hopwork" class="hopwork">
+	<section id="malt" class="hopwork">
 		<div class="container">
 			<div class="columns-12 content has-text-centered is-medium">
-				<h2 class="">Contactez-moi sur la plateforme de freelance Hopwork...</h2>
-				<a href="https://www.hopwork.fr/profile/abderrahmenmaiza" target="_blank">
-					<img class="img-hopwork b-lazy" src="img/blank.gif" data-src="img/star_hopworker.svg" alt="Star Hopworker">
+				<h2 class="">Contactez-moi sur la plateforme de freelance Malt...</h2>
+				<a href="https://www.malt.fr/profile/abderrahmenmaiza" target="_blank" aria-label="Voir mon profil Malt (nouvelle fenêtre)">
+					<img class="img-hopwork b-lazy" src="img/blank.gif" data-src="img/star_malter.svg" alt="Star Malter">
 				</a>
 				<p class="subtitle is-5 italic">... et recevez rapidement un devis !</p>
 			</div>
@@ -351,22 +370,21 @@
 	</section>
 
 
-    <footer id="contact" class="footer b-lazy" data-src="https://subtlepatterns.com/patterns/shattered.png">
+    <footer id="contact" class="footer b-lazy" role="contentinfo" data-src="https://subtlepatterns.com/patterns/shattered.png">
     	<div class="container">
     		<div class="content has-text-centered">
     			<span class="icon">
     				<i class="fa fa-send" aria-hidden="true"></i> 
     			</span> <br><br>
-    			<a href="mailto:abdermaiza@gmail.com" title="abdermaiza@gmail.com">abdermaiza@gmail.com</a>
+    			<a href="mailto:abdermaiza@gmail.com" class="button is-primary is-outlined" title="abdermaiza@gmail.com">abdermaiza@gmail.com</a>
     		</div>
     		<div class="content has-text-centered">
-			    <h3 class="subtitle is-6">Ce portfolio a été développé en décembre 2016, avec le framework CSS <a href="http://bulma.io/" class="link-footer" target="_blank">Bulma</a>.</h3>
+			    <h3 class="subtitle is-6">Ce portfolio a été développé fin 2016 avec le framework CSS <a href="http://bulma.io/" class="link-footer" target="_blank"  aria-label="Voir la page web (nouvelle fenêtre)">Bulma</a>.</h3>
     		</div>
     	</div>
     </footer>
        
 	<script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
-	<script src="http://bulma.io/javascript/clipboard.min.js"></script>
 	<script src="js/main.js"></script>
 	<script>
 		$(document).ready(function() {

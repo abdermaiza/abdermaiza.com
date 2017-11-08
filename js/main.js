@@ -1,5 +1,5 @@
 
-jQuery(document).ready(function ($) {
+jQuery(document).ready(function () {
 
   var $toggle = $('#nav-toggle');
   var $menu = $('#nav-menu');
@@ -50,11 +50,6 @@ jQuery(document).ready(function ($) {
     $(this).parent().children('pre').css('max-height', 'none');
   });
 
-  new Clipboard('.copy', {
-    target: function(trigger) {
-      return trigger.previousSibling;
-    }
-  });
 // code personnalisé pour les skills au clic, la nav-menu au clic et les projets au survol
 	$('.notification .techno').on('click', function(){
 		$(this).siblings('.info-skill').toggleClass('hidden');
@@ -73,5 +68,20 @@ jQuery(document).ready(function ($) {
     $(this).parents('a').siblings('.title').toggleClass('scale');
   });
 
+	$(window).scroll(function() {
+	  var windowTop = $(window).scrollTop();
+	  $(".presentation").css("margin-top", windowTop / 1.5);
+	  $("body").css("background-position-y", 0 - windowTop / 6);
+	});
 
+	
+	// $(window).scroll(function(){                          
+	// 	if ($(this).scrollTop() > 1000) {
+	// 		$('.nav').toggleClass('zizou');
+	// 	} else {
+	// 		$('.nav').toggleClass('zizou');
+	// 	}
+	// });
+	
+	
 });
