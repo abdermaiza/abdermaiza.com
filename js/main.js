@@ -57,7 +57,7 @@ jQuery(document).ready(function () {
 	});
 
   $('#nav-menu .nav-item').on('click', function(){
-    $('.nav-menu').removeClass('is-active');
+    $('.nav-menu, .nav-toggle').removeClass('is-active');
   });
 
   $('.projects-img').hover(function(){
