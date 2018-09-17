@@ -74,6 +74,10 @@ a.nav-item {
     width: 70%;
     color: black;
 }
+.presentation a {
+    text-shadow: 1px 1px 1px black;
+    text-decoration: underline;
+}
 a.js-scrollTo:hover{
 	color: #000;
 }
@@ -173,7 +177,7 @@ a.js-scrollTo:hover{
 	height: auto;
 }
 .techno{
-	font-size: 3rem;
+	font-size: 2rem;
 	padding: 1rem;
     transition: .5s ease-in-out;
     cursor: pointer;
@@ -185,8 +189,8 @@ a.js-scrollTo:hover{
 .notification .info-skill{
 	z-index: 2;
 	display: block;
+	min-height: 180px;
 	height: auto;
-	min-height: 202px;
 	visibility: visible;
 	opacity: 1;
 	padding: 1rem;
@@ -211,9 +215,6 @@ a.js-scrollTo:hover{
 	transform: translate(0px, -15px) rotate(360deg);
 	opacity: .9;
 }
-.info-skill .progress{
-	margin-top: 2rem;
-}
 .double-project{
 	margin-top: 4rem;
 }
@@ -224,6 +225,7 @@ a.js-scrollTo:hover{
     -ms-filter: grayscale(100%);
     -o-filter: grayscale(100%);
 	transition: .5s ease-in-out;
+    max-height: 18rem;
 }
 .projects-img:hover{
     filter: grayscale(0%);
@@ -239,8 +241,10 @@ a.js-scrollTo:hover{
 	position: relative;
 }
 .logo-client {
-	margin: .5rem 0 1rem;
-	width: 75%;
+    margin: 2rem auto;
+    width: 75%;
+    max-width: 350px;
+    display: block;
 }
 
 .double-project .title:after {
@@ -319,6 +323,10 @@ footer{
 }
 footer .fa-send{
 	color: #00A68D;
+}
+footer a,
+footer .button.is-primary.is-outlined{
+	color: #005C4E;
 }
 .link-footer{
 	text-decoration: underline;
@@ -399,7 +407,8 @@ footer .fa-send{
 		width: 50%;
 	}
 	.hero-one {
-		background-color: white;
+		animation: colorcycle 20s infinite; 
+                opacity: 0.75;
 		position: relative;
 	}
 	.hero-one:before {
@@ -426,11 +435,21 @@ footer .fa-send{
 	    background-color: #00d1b2;
 	    transform: rotate(135deg);
 	}
+	@keyframes colorcycle {
+	0%   {background: #fff;}
+	25%  {background: aliceblue;}
+	50%  {background: #7BCECC;}
+	75%  {background: #4fd1cd;}
+	100% {background: #fff;}
+	}
 	.hero-two {
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
 		transition: 1s ease-in-out;
+	}
+	.techno{
+		font-size: 3rem;
 	}
 	.hero-two:hover {
 		-webkit-filter: grayscale(50%);
